@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Altynay's Youtube Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  ::-webkit-scrollbar-button {
+    height: 12px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    background: rgb(215, 215, 215);
+  }
+  
+
+  r::-webkit-scrollbar-thumb {
+    background:   rgb(123, 123, 123);
+    border-radius: 20px;
+  }
+
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(123, 123, 123);
+  } 
+  
+  ::-webkit-scrollbar-button {
+  height: 12px;
+}
+</style>
+<body>
+    <!-- Header start -->
+    <header class="header">
+        <div class="logo left">
+          <i id="menu" class="material-icons">menu</i>
+          <img id="utublogo"src="images/logo.svg">
+        </div>
+        
+        <div class="search center">
+          <form action="">
+            <input type="text" placeholder="Search" />
+            <button><i class="material-icons display-this">search</i></button>
+          </form>
+          <i class="material-icons mic">mic</i>
+        </div>
+        
+        <div class="icons right">
+          <i id="search-icon" class="material-icons yitir">search</i>
+          <i class="material-icons">videocam</i>
+          <i class="material-icons">apps</i>
+          <i class="material-icons">notifications</i>
+          <i class="material-icons display-this">account_circle</i>
+        </div>
+    </header>
+    <!-- Header ends -->  
+    <!-- Side-bar starts -->
+    <div class="  side-bar">
+        <div class="nav">
+          <a class="nav-link live">
+             <i class="material-icons">home</i>
+             <span>Home</span>
+          </a>
+          <a class="nav-link">
+             <i class="material-icons">local_fire_department</i>
+             <span>Trending</span>
+          </a>
+          <a class="nav-link">
+             <i class="material-icons">subscriptions</i>
+             <span>Subscriptions</span>
+          </a>
+        <hr>
+        </div>
+        <div class="nav">
+          <a class="nav-link">
+            <i class="material-icons">library_add_check</i>
+            <span>Library</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">history</i>
+            <span>History</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">play_arrow</i>
+            <span>Your Videos</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">watch_later</i>
+            <span>Watch Later</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">thumb_up</i>
+            <span>Liked Videos</span>
+          </a>
+          <a class="nav-link show-more">
+            <i class="material-icons">expand_more</i>
+            <span>Show More</span>
+          </a>
+          <hr>
+          <a class="nav-link">
+            <span class="sidebarname">SUBSCRIPTIONS</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">account_circle</i>
+            <span>FreeMedEducation</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">account_circle</i>
+            <span>Ylhamly Yashlar</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">account_circle</i>
+            <span>Khan Academy</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">account_circle</i>
+            <span>Future Coders</span>
+          </a>
+          <a class="nav-link show-more">
+            <i class="material-icons">expand_more</i>
+            <span>Show More</span>
+          </a>
+          <hr>
+          <a class="nav-link">
+            <span class="sidebarname">EXPLORE</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">theaters</i>
+            <span>Movies & Shows</span>
+          </a>
+          <!-- <a class="nav-link">
+            <i class="material-icons">studia-controller</i>
+            <span>Gaming</span>
+          </a> -->
+          <a class="nav-link">
+            <i class="material-icons">cast</i>
+            <span>Live</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">lightbulb</i>
+            <span>Learning</span>
+          </a>
+          <a class="nav-link">
+            <i class="material-icons">sports-soccer</i>
+            <span>Sports</span>
+          </a>
+        </div>
+    </div>
+    <!-- Side-bar ends -->
+    <!-- Hashtag starts -->
+    <div class="tags">
+      <button class="hashtag active">All</button>
+      <button class="hashtag">CSS</button>
+      <button class="hashtag">Html</button>
+      <button class="hashtag">Media</button>
+      <button class="hashtag">Turkmenistan</button>
+      <button class="hashtag">Trending</button>
+      <button class="hashtag">Psychology</button>
+      <button class="hashtag">Ennegram</button>
+      <button class="hashtag">Web-development</button>
+      <button class="hashtag">Bootcamps</button>
+      <button class="hashtag">Asman</button>
+      <button class="hashtag">Ashgabat</button>
+      <button class="hashtag">Psychology</button>
+      <button class="hashtag">Ennegram</button>
+      <button class="hashtag">Web-development</button>
+      <button class="hashtag">Bootcamps</button>
+      <button class="hashtag">Asman</button>
+    </div>
+    <!-- Hashtag ends -->
+    <!-- Videos starts -->
+    <div class="videos">
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/1.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/2.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/3.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/4.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/5.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/6.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/7.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/8.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/9.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/10.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/11.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/12.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/13.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/14.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/15.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/16.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/3.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/4.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/5.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/6.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/7.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/8.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/9.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/10.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/11.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/12.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/13.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/14.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/15.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="thumbnail">
+          <img src="images/16.jpg" alt="">
+        </div>
+        <div class="title">
+          <div class="title-profile">
+            <i class="material-icons display-this">account_circle</i>
+          </div>
+          <div class="text">
+            <h3>Magnam laboriosam ipsum architecto 
+            </h3>
+            <a href="#">Lorem ipsum  
+            </a>
+            <span>2M views . 3 months ago 
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Videos ends -->  
+
+    <script src="/index.js"></script>
+</body>
+</html>
+
+
